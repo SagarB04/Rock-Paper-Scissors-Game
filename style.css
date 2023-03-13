@@ -1,0 +1,364 @@
+body {
+    margin: 0;
+    background-color: #8CC461;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+    width: 800px;
+    height: 160px;
+    border: 3px solid #FFFFFF;
+    border-radius: 13px;
+}
+
+.heading {
+    margin: 0 20px;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.scores {
+    display: flex;
+    flex-direction: row;
+}
+
+.score {
+    background-color: #FFFFFF;
+    margin: 0 20px;
+    height: 130px;
+    width: 130px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.txt {
+    color: #656565;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 10px 0 0;
+}
+
+.score1,
+.score2 {
+    color: #252525;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+
+
+/* middle container */
+.middle {
+    background-image: url('images/triangle.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 75px;
+    background-size: 260px;
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 520px;
+    height: 370px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.middle img {
+    border-radius: 100%;
+    width: 175px;
+    transition: all 0.25s;
+}
+
+.middle img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.middle img:active {
+    transform: scale(1);
+    cursor: pointer;
+}
+
+
+
+/* hidden middle */
+.middle-hidden {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+    width: 800px;
+    height: 290px;
+}
+
+.middle-hidden .you,
+.middle-hidden .pc {
+    height: 100%;
+}
+
+.middle-hidden .common {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.common img {
+    width: 200px;
+    border-radius: 100%;
+}
+
+.common p {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+.common span {
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+}
+
+.common h2 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.common button {
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 175px;
+    height: 40px;
+    background-color: #FFFFFF;
+    color: #6B6B6B;
+    transition: all 0.35s;
+}
+
+.common button:hover {
+    transform: scale(1.1);
+}
+
+.common button:active {
+    transform: scale(1);
+}
+
+.foot{
+    margin-left: auto;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.foot button{
+    width: 140px;
+    height: 45px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    margin: 10px;
+    transition: all 0.2s;
+}
+.foot button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.foot button:active{
+    transform: scale(1);
+}
+
+
+
+/* next button */
+
+.foot a{
+    text-decoration: none;
+}
+
+.foot .btn-hide{
+    display: none;
+}
+
+
+
+/* rule section */
+.rules {
+    display: none;
+}
+
+.rule1-img,
+.rule2-img {
+    position: absolute;
+    z-index: 10;
+}
+
+.rule1-img {
+    height: 330px;
+    bottom: 85px;
+    right: 40px;
+}
+
+.rule2-img {
+    border-radius: 100%;
+    bottom: 380px;
+    right: 15px;
+    transition: all 0.2s;
+}
+
+.rule2-img:hover {
+    transform: scale(1.1);
+}
+
+.rule2-img:active {
+    transform: scale(1);
+}
+
+
+
+/* celebration page */
+.imgs,
+.text,
+.btn-play{
+    margin-top: 35px; 
+}
+.imgs{
+    height: 300px;
+    width: 500px;
+}
+.stars{
+    position: absolute;
+}
+.trophy{
+    position: relative;
+    left: 150px;
+    top: 100px;
+}
+
+.text {
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.hurray {
+    font-size: 5.5rem;
+    margin: 0;
+    letter-spacing: 0.6rem;
+}
+
+.in-text {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+}
+
+.plybtn {
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 175px;
+    height: 40px;
+    background-color: #FFFFFF;
+    color: #6B6B6B;
+    transition: all 0.25s;
+}
+
+.plybtn:hover {
+    transform: scale(1.1);
+}
+
+.plybtn:active {
+    transform: scale(1);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* animation  */
+.animation{
+    position: absolute;
+    flex-direction: column;
+    top: 250px;
+    margin: 40px;
+    width: 800px;
+    height: 290px;
+    z-index: -100;
+}
+.circle1,
+.circle2,
+.circle3{
+    display: none;
+}
+.circle1-win{
+    position: absolute;
+    top: 65px;
+    left: -10px;
+    width: 220px;
+    z-index: -10;
+}
+.circle2-win{
+    position: absolute;
+    top: 40px;
+    left: -34px;
+    width: 270px;
+    z-index: -20;
+}
+.circle3-win{
+    position: absolute;
+    top: -50px;
+    left: -124px;
+    width: 450px;
+    z-index: -30;
+}
+.circle1-lost{
+    position: absolute;
+    top: 65px;
+    right: -10px;
+    width: 220px;
+    z-index: -10;
+}
+.circle2-lost{
+    position: absolute;
+    top: 40px;
+    right: -34px;
+    width: 270px;
+    z-index: -20;
+}
+.circle3-lost{
+    position: absolute;
+    top: -50px;
+    right: -124px;
+    width: 450px;
+    z-index: -30;
+}
+

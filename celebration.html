@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/fevicon.png">
+    <title>HURRAY!!</title>
+    <!-- style sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="imgs">
+            <img class="stars" src="images/stars.png" alt="stars">
+            <img class="trophy" src="images/trophy.png" alt="trophy">
+        </div>
+        <div class="text">
+            <p class="hurray">HURRAY!!</p>
+            <p class="in-text">YOU WON THE GAME</p>
+        </div>
+        <div class="btn-play">
+            <a href="index.html"><button class="plybtn">PLAY AGAIN</button></a>
+        </div>
+
+        <div class="foot">
+            <button>RULES</button>
+        </div>
+    </div>
+
+
+    <!-- hidden section -->
+    <div class="ruleButton rules">
+        <img class="rule1-img" src="images/rules.png" alt="rules">
+        <img class="rule2-img" src="images/cross.png" alt="cross">
+    </div>
+
+    <script>
+
+        let rules = document.querySelector('.ruleButton');
+        let ruleBtn = document.querySelector('.foot button');
+        let crossBtn = document.querySelector('.rule2-img');
+
+        ruleBtn.addEventListener('click', rulesRemoval);
+        crossBtn.addEventListener('click', rulesRemoval);
+
+        function rulesRemoval() {
+            rules.classList.toggle('rules')
+        }
+
+    </script>
+</body>
+
+</html>
